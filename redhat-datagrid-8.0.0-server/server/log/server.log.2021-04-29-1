@@ -1,0 +1,71 @@
+2021-04-29 16:53:21,865 INFO  (main) [BOOT] JVM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 11.0.10+8-LTS-162
+2021-04-29 16:53:21,868 INFO  (main) [BOOT] JVM arguments = -Xms64m -Xmx512m -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=64m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dvisualvm.display.name=redhat-datagrid-server -Dinfinispan.server.home.path=/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server
+2021-04-29 16:53:21,872 INFO  (main) [BOOT] PID = 7451
+2021-04-29 16:53:21,913 INFO  (main) [org.infinispan.SERVER] ISPN080000: Red Hat Data Grid Server starting
+2021-04-29 16:53:21,913 INFO  (main) [org.infinispan.SERVER] ISPN080017: Server configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/infinispan.xml
+2021-04-29 16:53:21,913 INFO  (main) [org.infinispan.SERVER] ISPN080032: Logging configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/log4j2.xml
+2021-04-29 16:53:22,444 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'query-dsl-filter-converter-factory'
+2021-04-29 16:53:22,444 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'continuous-query-filter-converter-factory'
+2021-04-29 16:53:22,445 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'jdk.nashorn.api.scripting.NashornScriptEngineFactory'
+2021-04-29 16:53:23,048 INFO  (main) [org.infinispan.CONTAINER] ISPN000128: Infinispan version: Red Hat Data Grid 'Turia' 10.1.5.Final-redhat-00001
+2021-04-29 16:53:23,052 INFO  (main) [org.infinispan.CONTAINER] ISPN000389: Loaded global state, version=10.1.5.Final-redhat-00001 timestamp=2021-04-28T10:06:43.778362Z
+2021-04-29 16:53:23,206 INFO  (main) [org.infinispan.CLUSTER] ISPN000078: Starting JGroups channel cluster
+2021-04-29 16:53:25,293 INFO  (main) [org.jgroups.protocols.pbcast.GMS] Ksolvess-MacBook-Pro-61703: no members discovered after 2005 ms: creating cluster as coordinator
+2021-04-29 16:53:25,302 INFO  (main) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-61703|0] (1) [Ksolvess-MacBook-Pro-61703]
+2021-04-29 16:53:25,309 INFO  (main) [org.infinispan.CLUSTER] ISPN000079: Channel cluster local address is Ksolvess-MacBook-Pro-61703, physical addresses are [192.168.29.33:7800]
+2021-04-29 16:53:25,598 INFO  (main) [org.infinispan.CONTAINER] ISPN000104: Using EmbeddedTransactionManager
+2021-04-29 16:53:26,072 INFO  (ForkJoinPool.commonPool-worker-19) [org.infinispan.SERVER] ISPN080018: Protocol HotRod (internal)
+2021-04-29 16:53:26,172 INFO  (main) [org.infinispan.SERVER] ISPN080018: Protocol REST (internal)
+2021-04-29 16:53:26,327 INFO  (main) [org.infinispan.SERVER] ISPN080004: Protocol SINGLE_PORT listening on 127.0.0.1:11222
+2021-04-29 16:53:26,328 INFO  (main) [org.infinispan.SERVER] ISPN080034: Server 'Ksolvess-MacBook-Pro-61703' listening on http://127.0.0.1:11222
+2021-04-29 16:53:26,328 INFO  (main) [org.infinispan.SERVER] ISPN080001: Red Hat Data Grid Server 10.1.5.Final-redhat-00001 started in 4412ms
+2021-04-29 17:48:52,841 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080002: Red Hat Data Grid Server stopping
+2021-04-29 18:03:25,699 WARN  (expiration-thread--p6-t1) [org.infinispan.PERSISTENCE] ISPN000026: Caught exception purging data container! org.infinispan.persistence.spi.StoreUnavailableException: Store org.infinispan.persistence.file.SingleFileStore@42cc5460 is unavailable
+	at org.infinispan.persistence.manager.PersistenceManagerImpl.pollStoreAvailability(PersistenceManagerImpl.java:236)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-04-29 18:03:25,909 WARN  (expiration-thread--p6-t1) [org.infinispan.PERSISTENCE] ISPN000026: Caught exception purging data container! org.infinispan.persistence.spi.StoreUnavailableException: Store org.infinispan.persistence.file.SingleFileStore@26101efc is unavailable
+	at org.infinispan.persistence.manager.PersistenceManagerImpl.pollStoreAvailability(PersistenceManagerImpl.java:236)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-04-29 18:03:25,909 WARN  (expiration-thread--p6-t1) [org.infinispan.PERSISTENCE] ISPN000026: Caught exception purging data container! org.infinispan.persistence.spi.StoreUnavailableException: Store org.infinispan.persistence.file.SingleFileStore@615bad16 is unavailable
+	at org.infinispan.persistence.manager.PersistenceManagerImpl.pollStoreAvailability(PersistenceManagerImpl.java:236)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-04-29 18:03:34,276 INFO  (jgroups-29,Ksolvess-MacBook-Pro-61703) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-61703|1] (2) [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293]
+2021-04-29 18:03:34,280 INFO  (jgroups-29,Ksolvess-MacBook-Pro-61703) [org.infinispan.CLUSTER] ISPN100000: Node Ksolvess-MacBook-Pro-38293 joined the cluster
+2021-04-29 18:03:34,691 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], phase READ_OLD_WRITE_ALL, topology id 2
+2021-04-29 18:03:34,747 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2021-04-29 18:03:34,752 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2021-04-29 18:03:34,753 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], topology id 5
+2021-04-29 18:03:34,776 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], phase READ_OLD_WRITE_ALL, topology id 2
+2021-04-29 18:03:34,784 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], phase READ_OLD_WRITE_ALL, topology id 2
+2021-04-29 18:03:34,804 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2021-04-29 18:03:34,806 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2021-04-29 18:03:34,808 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], topology id 5
+2021-04-29 18:03:34,818 INFO  (remote-thread--p3-t1) [org.infinispan.CLUSTER] [Context=org.infinispan.COUNTER]ISPN100002: Starting rebalance with members [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293], phase READ_OLD_WRITE_ALL, topology id 2
+2021-04-29 18:03:49,604 INFO  (VERIFY_SUSPECT.TimerThread-39,Ksolvess-MacBook-Pro-61703) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-61703|2] (1) [Ksolvess-MacBook-Pro-61703]
+2021-04-29 18:03:49,605 INFO  (VERIFY_SUSPECT.TimerThread-39,Ksolvess-MacBook-Pro-61703) [org.infinispan.CLUSTER] ISPN100001: Node Ksolvess-MacBook-Pro-38293 left the cluster
+2021-04-29 18:03:49,608 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=___protobuf_metadata]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 3
+2021-04-29 18:03:49,609 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=___protobuf_metadata]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 4
+2021-04-29 18:03:49,610 WARN  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [Ksolvess-MacBook-Pro-61703], lost members are [Ksolvess-MacBook-Pro-38293], stable members are [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293]
+2021-04-29 18:03:49,610 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 6
+2021-04-29 18:03:49,611 WARN  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [Ksolvess-MacBook-Pro-61703], lost members are [Ksolvess-MacBook-Pro-38293], stable members are [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293]
+2021-04-29 18:03:49,612 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 6
+2021-04-29 18:03:49,613 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.COUNTER]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 3
+2021-04-29 18:03:49,614 INFO  (transport-thread--p5-t5) [org.infinispan.CLUSTER] [Context=org.infinispan.COUNTER]ISPN100008: Updating cache members list [Ksolvess-MacBook-Pro-61703], topology id 4

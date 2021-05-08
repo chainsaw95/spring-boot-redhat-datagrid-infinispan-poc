@@ -1,0 +1,6 @@
+2021-05-06 08:05:13,113 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080002: Red Hat Data Grid Server stopping
+2021-05-06 08:05:13,287 INFO  (Thread-0) [org.infinispan.CONTAINER] ISPN000029: Passivating all entries to disk
+2021-05-06 08:05:13,328 INFO  (async-thread--p2-t13) [org.infinispan.CONTAINER] ISPN000030: Passivated 2 entries in 41 milliseconds
+2021-05-06 08:05:13,345 INFO  (Thread-0) [org.infinispan.CLUSTER] ISPN000080: Disconnecting JGroups channel cluster
+2021-05-06 08:05:13,364 INFO  (Thread-0) [org.infinispan.CONTAINER] ISPN000390: Persisted state, version=10.1.5.Final-redhat-00001 timestamp=2021-05-06T02:35:13.361296Z
+2021-05-06 08:05:13,368 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080003: Red Hat Data Grid Server stopped

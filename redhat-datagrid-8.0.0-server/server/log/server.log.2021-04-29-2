@@ -1,0 +1,48 @@
+2021-04-29 17:55:30,620 INFO  (main) [BOOT] JVM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 11.0.10+8-LTS-162
+2021-04-29 17:55:30,622 INFO  (main) [BOOT] JVM arguments = -Xms64m -Xmx512m -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=64m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dvisualvm.display.name=redhat-datagrid-server -Dinfinispan.server.home.path=/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server
+2021-04-29 17:55:30,626 INFO  (main) [BOOT] PID = 9947
+2021-04-29 17:55:30,659 INFO  (main) [org.infinispan.SERVER] ISPN080000: Red Hat Data Grid Server starting
+2021-04-29 17:55:30,659 INFO  (main) [org.infinispan.SERVER] ISPN080017: Server configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/infinispan.xml
+2021-04-29 17:55:30,659 INFO  (main) [org.infinispan.SERVER] ISPN080032: Logging configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/log4j2.xml
+2021-04-29 17:55:31,152 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'query-dsl-filter-converter-factory'
+2021-04-29 17:55:31,152 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'continuous-query-filter-converter-factory'
+2021-04-29 17:55:31,153 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'jdk.nashorn.api.scripting.NashornScriptEngineFactory'
+2021-04-29 17:55:31,698 INFO  (main) [org.infinispan.CONTAINER] ISPN000128: Infinispan version: Red Hat Data Grid 'Turia' 10.1.5.Final-redhat-00001
+2021-04-29 17:55:31,701 WARN  (main) [org.infinispan.CONTAINER] ISPN000574: Global state cannot persisted because it is incomplete (usually caused by errors at startup).
+2021-04-29 17:55:31,704 FATAL (main) [org.infinispan.SERVER] ISPN080028: Red Hat Data Grid Server failed to start java.util.concurrent.ExecutionException: org.infinispan.manager.EmbeddedCacheManagerStartupException: org.infinispan.commons.CacheConfigurationException: ISPN000512: Cannot acquire lock '/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/data/___global.lck' for persistent global state
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
+	at org.infinispan.server.Bootstrap.runInternal(Bootstrap.java:139)
+	at org.infinispan.server.tool.Main.run(Main.java:98)
+	at org.infinispan.server.Bootstrap.main(Bootstrap.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.infinispan.server.loader.Loader.main(Loader.java:52)
+Caused by: org.infinispan.manager.EmbeddedCacheManagerStartupException: org.infinispan.commons.CacheConfigurationException: ISPN000512: Cannot acquire lock '/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/data/___global.lck' for persistent global state
+	at org.infinispan.manager.DefaultCacheManager.internalStart(DefaultCacheManager.java:747)
+	at org.infinispan.manager.DefaultCacheManager.start(DefaultCacheManager.java:713)
+	at org.infinispan.server.SecurityActions.lambda$startCacheManager$1(SecurityActions.java:51)
+	at org.infinispan.security.Security.doPrivileged(Security.java:47)
+	at org.infinispan.server.SecurityActions.doPrivileged(SecurityActions.java:31)
+	at org.infinispan.server.SecurityActions.startCacheManager(SecurityActions.java:54)
+	at org.infinispan.server.Server.run(Server.java:285)
+	... 8 more
+Caused by: org.infinispan.commons.CacheConfigurationException: ISPN000512: Cannot acquire lock '/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/data/___global.lck' for persistent global state
+	at org.infinispan.globalstate.impl.GlobalStateManagerImpl.acquireGlobalLock(GlobalStateManagerImpl.java:84)
+	at org.infinispan.globalstate.impl.GlobalStateManagerImpl.start(GlobalStateManagerImpl.java:64)
+	at org.infinispan.globalstate.impl.CorePackageImpl$1.start(CorePackageImpl.java:34)
+	at org.infinispan.globalstate.impl.CorePackageImpl$1.start(CorePackageImpl.java:27)
+	at org.infinispan.factories.impl.BasicComponentRegistryImpl.invokeStart(BasicComponentRegistryImpl.java:587)
+	at org.infinispan.factories.impl.BasicComponentRegistryImpl.doStartWrapper(BasicComponentRegistryImpl.java:578)
+	at org.infinispan.factories.impl.BasicComponentRegistryImpl.startWrapper(BasicComponentRegistryImpl.java:547)
+	at org.infinispan.factories.impl.BasicComponentRegistryImpl.access$700(BasicComponentRegistryImpl.java:30)
+	at org.infinispan.factories.impl.BasicComponentRegistryImpl$ComponentWrapper.running(BasicComponentRegistryImpl.java:770)
+	at org.infinispan.factories.AbstractComponentRegistry.internalStart(AbstractComponentRegistry.java:341)
+	at org.infinispan.factories.AbstractComponentRegistry.start(AbstractComponentRegistry.java:237)
+	at org.infinispan.manager.DefaultCacheManager.internalStart(DefaultCacheManager.java:742)
+	... 14 more
+
+2021-04-29 17:55:31,756 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080002: Red Hat Data Grid Server stopping
+2021-04-29 17:55:31,757 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080003: Red Hat Data Grid Server stopped

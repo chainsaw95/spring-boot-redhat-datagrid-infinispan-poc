@@ -1,0 +1,21 @@
+JarIndex-Version: 1.0
+
+infinispan-console-0.4.0.Final-redhat-00002.jar
+META-INF
+META-INF/maven
+META-INF/maven/org.infinispan
+META-INF/maven/org.infinispan/infinispan-console
+fonts
+images
+app.bundle.js
+app.bundle.js.map
+app.css
+apple-touch-icon.png
+favicon-16x16.png
+favicon-32x32.png
+index.html
+safari-pinned-tab.svg
+site.webmanifest
+support.bundle.js
+support.bundle.js.map
+

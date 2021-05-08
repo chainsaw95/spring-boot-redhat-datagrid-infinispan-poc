@@ -1,0 +1,21 @@
+2021-04-27 16:44:00,467 INFO  (main) [BOOT] JVM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 11.0.10+8-LTS-162
+2021-04-27 16:44:00,471 INFO  (main) [BOOT] JVM arguments = -Xms64m -Xmx512m -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=64m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dvisualvm.display.name=redhat-datagrid-server -Dinfinispan.server.home.path=/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server
+2021-04-27 16:44:00,474 INFO  (main) [BOOT] PID = 12932
+2021-04-27 16:44:00,515 INFO  (main) [org.infinispan.SERVER] ISPN080000: Red Hat Data Grid Server starting
+2021-04-27 16:44:00,515 INFO  (main) [org.infinispan.SERVER] ISPN080017: Server configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/infinispan.xml
+2021-04-27 16:44:00,515 INFO  (main) [org.infinispan.SERVER] ISPN080032: Logging configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/log4j2.xml
+2021-04-27 16:44:01,107 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'query-dsl-filter-converter-factory'
+2021-04-27 16:44:01,107 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'continuous-query-filter-converter-factory'
+2021-04-27 16:44:01,108 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'jdk.nashorn.api.scripting.NashornScriptEngineFactory'
+2021-04-27 16:44:01,755 INFO  (main) [org.infinispan.CONTAINER] ISPN000128: Infinispan version: Red Hat Data Grid 'Turia' 10.1.5.Final-redhat-00001
+2021-04-27 16:44:01,759 INFO  (main) [org.infinispan.CONTAINER] ISPN000389: Loaded global state, version=10.1.5.Final-redhat-00001 timestamp=2021-04-27T02:52:12.285435Z
+2021-04-27 16:44:01,926 INFO  (main) [org.infinispan.CLUSTER] ISPN000078: Starting JGroups channel cluster
+2021-04-27 16:44:04,043 INFO  (main) [org.jgroups.protocols.pbcast.GMS] Ksolvess-MacBook-Pro-27429: no members discovered after 2007 ms: creating cluster as coordinator
+2021-04-27 16:44:04,052 INFO  (main) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-27429|0] (1) [Ksolvess-MacBook-Pro-27429]
+2021-04-27 16:44:04,059 INFO  (main) [org.infinispan.CLUSTER] ISPN000079: Channel cluster local address is Ksolvess-MacBook-Pro-27429, physical addresses are [192.168.29.33:7800]
+2021-04-27 16:44:04,382 INFO  (main) [org.infinispan.CONTAINER] ISPN000104: Using EmbeddedTransactionManager
+2021-04-27 16:44:04,784 INFO  (ForkJoinPool.commonPool-worker-19) [org.infinispan.SERVER] ISPN080018: Protocol HotRod (internal)
+2021-04-27 16:44:04,871 INFO  (main) [org.infinispan.SERVER] ISPN080018: Protocol REST (internal)
+2021-04-27 16:44:05,035 INFO  (main) [org.infinispan.SERVER] ISPN080004: Protocol SINGLE_PORT listening on 127.0.0.1:11222
+2021-04-27 16:44:05,035 INFO  (main) [org.infinispan.SERVER] ISPN080034: Server 'Ksolvess-MacBook-Pro-27429' listening on http://127.0.0.1:11222
+2021-04-27 16:44:05,035 INFO  (main) [org.infinispan.SERVER] ISPN080001: Red Hat Data Grid Server 10.1.5.Final-redhat-00001 started in 4519ms

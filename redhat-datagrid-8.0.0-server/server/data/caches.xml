@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<infinispan>
+    <cache-container>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="test-poc-cache" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="payment-taxes-detail" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+        <invalidation-cache mode="SYNC" remote-timeout="17500" name="user-by-pan" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+        </invalidation-cache>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="test-cache-1" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="test-java-2" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="test-cache" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+        <distributed-cache mode="SYNC" remote-timeout="17500" name="test-cache-2" statistics="true">
+            <locking concurrency-level="1000" acquire-timeout="15000" striping="false"/>
+            <transaction mode="NONE"/>
+            <state-transfer timeout="60000"/>
+        </distributed-cache>
+    </cache-container></infinispan>

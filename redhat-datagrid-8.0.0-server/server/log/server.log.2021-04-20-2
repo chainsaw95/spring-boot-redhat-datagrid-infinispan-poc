@@ -1,0 +1,55 @@
+2021-04-20 10:31:05,045 INFO  (main) [BOOT] JVM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 11.0.10+8-LTS-162
+2021-04-20 10:31:05,048 INFO  (main) [BOOT] JVM arguments = -Xms64m -Xmx512m -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=64m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dvisualvm.display.name=redhat-datagrid-server -Dinfinispan.server.home.path=/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server
+2021-04-20 10:31:05,051 INFO  (main) [BOOT] PID = 8304
+2021-04-20 10:31:05,086 INFO  (main) [org.infinispan.SERVER] ISPN080000: Red Hat Data Grid Server starting
+2021-04-20 10:31:05,087 INFO  (main) [org.infinispan.SERVER] ISPN080017: Server configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/infinispan.xml
+2021-04-20 10:31:05,087 INFO  (main) [org.infinispan.SERVER] ISPN080032: Logging configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/log4j2.xml
+2021-04-20 10:31:05,578 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'query-dsl-filter-converter-factory'
+2021-04-20 10:31:05,578 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'continuous-query-filter-converter-factory'
+2021-04-20 10:31:05,579 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'jdk.nashorn.api.scripting.NashornScriptEngineFactory'
+2021-04-20 10:31:06,215 INFO  (main) [org.infinispan.CONTAINER] ISPN000128: Infinispan version: Red Hat Data Grid 'Turia' 10.1.5.Final-redhat-00001
+2021-04-20 10:31:06,219 INFO  (main) [org.infinispan.CONTAINER] ISPN000389: Loaded global state, version=10.1.5.Final-redhat-00001 timestamp=2021-04-19T08:37:01.964971Z
+2021-04-20 10:31:06,402 INFO  (main) [org.infinispan.CLUSTER] ISPN000078: Starting JGroups channel cluster
+2021-04-20 10:31:06,642 INFO  (main) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-47577|1] (2) [Ksolvess-MacBook-Pro-47577, Ksolvess-MacBook-Pro-57511]
+2021-04-20 10:31:06,650 INFO  (main) [org.infinispan.CLUSTER] ISPN000079: Channel cluster local address is Ksolvess-MacBook-Pro-57511, physical addresses are [192.168.29.33:7801]
+2021-04-20 10:31:06,987 INFO  (main) [org.infinispan.CONTAINER] ISPN000104: Using EmbeddedTransactionManager
+2021-04-20 10:31:07,544 INFO  (ForkJoinPool.commonPool-worker-19) [org.infinispan.SERVER] ISPN080018: Protocol HotRod (internal)
+2021-04-20 10:31:07,595 INFO  (main) [org.infinispan.SERVER] ISPN080018: Protocol REST (internal)
+2021-04-20 10:31:07,744 INFO  (main) [org.infinispan.CONTAINER] ISPN000029: Passivating all entries to disk
+2021-04-20 10:31:07,747 INFO  (main) [org.infinispan.CONTAINER] ISPN000030: Passivated 0 entries in 3 milliseconds
+2021-04-20 10:31:07,779 INFO  (main) [org.infinispan.CLUSTER] ISPN000080: Disconnecting JGroups channel cluster
+2021-04-20 10:31:07,789 INFO  (main) [org.infinispan.CONTAINER] ISPN000390: Persisted state, version=10.1.5.Final-redhat-00001 timestamp=2021-04-20T05:01:07.787936Z
+2021-04-20 10:31:07,792 FATAL (main) [org.infinispan.SERVER] ISPN080028: Red Hat Data Grid Server failed to start java.util.concurrent.ExecutionException: java.net.BindException: Address already in use
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
+	at org.infinispan.server.Bootstrap.runInternal(Bootstrap.java:139)
+	at org.infinispan.server.tool.Main.run(Main.java:98)
+	at org.infinispan.server.Bootstrap.main(Bootstrap.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.infinispan.server.loader.Loader.main(Loader.java:52)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:550)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:504)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:489)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:348)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-04-20 12:29:53,255 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080002: Red Hat Data Grid Server stopping
+2021-04-20 12:29:53,260 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080003: Red Hat Data Grid Server stopped

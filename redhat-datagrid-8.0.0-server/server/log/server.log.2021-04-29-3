@@ -1,0 +1,17 @@
+2021-04-29 18:03:32,743 INFO  (main) [BOOT] JVM Java HotSpot(TM) 64-Bit Server VM Oracle Corporation 11.0.10+8-LTS-162
+2021-04-29 18:03:32,746 INFO  (main) [BOOT] JVM arguments = -Xms64m -Xmx512m -XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=64m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dvisualvm.display.name=redhat-datagrid-server -Dinfinispan.server.home.path=/Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server
+2021-04-29 18:03:32,750 INFO  (main) [BOOT] PID = 11901
+2021-04-29 18:03:32,786 INFO  (main) [org.infinispan.SERVER] ISPN080000: Red Hat Data Grid Server starting
+2021-04-29 18:03:32,786 INFO  (main) [org.infinispan.SERVER] ISPN080017: Server configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/infinispan.xml
+2021-04-29 18:03:32,787 INFO  (main) [org.infinispan.SERVER] ISPN080032: Logging configuration: /Users/ksolves/Documents/CACHE/jboss-datagrid-poc/redhat-datagrid-8.0.0-server/server/conf/log4j2.xml
+2021-04-29 18:03:33,313 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'query-dsl-filter-converter-factory'
+2021-04-29 18:03:33,313 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'continuous-query-filter-converter-factory'
+2021-04-29 18:03:33,314 INFO  (main) [org.infinispan.SERVER] ISPN080027: Loaded extension 'jdk.nashorn.api.scripting.NashornScriptEngineFactory'
+2021-04-29 18:03:33,977 INFO  (main) [org.infinispan.CONTAINER] ISPN000128: Infinispan version: Red Hat Data Grid 'Turia' 10.1.5.Final-redhat-00001
+2021-04-29 18:03:34,157 INFO  (main) [org.infinispan.CLUSTER] ISPN000078: Starting JGroups channel cluster
+2021-04-29 18:03:34,298 INFO  (main) [org.infinispan.CLUSTER] ISPN000094: Received new cluster view for channel cluster: [Ksolvess-MacBook-Pro-61703|1] (2) [Ksolvess-MacBook-Pro-61703, Ksolvess-MacBook-Pro-38293]
+2021-04-29 18:03:34,307 INFO  (main) [org.infinispan.CLUSTER] ISPN000079: Channel cluster local address is Ksolvess-MacBook-Pro-38293, physical addresses are [192.168.29.33:7801]
+2021-04-29 18:03:34,345 INFO  (main) [org.infinispan.CONTAINER] ISPN000390: Persisted state, version=10.1.5.Final-redhat-00001 timestamp=2021-04-29T12:33:34.343961Z
+2021-04-29 18:03:34,625 INFO  (main) [org.infinispan.CONTAINER] ISPN000104: Using EmbeddedTransactionManager
+2021-04-29 18:03:48,217 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080002: Red Hat Data Grid Server stopping
+2021-04-29 18:03:48,218 INFO  (Thread-0) [org.infinispan.SERVER] ISPN080003: Red Hat Data Grid Server stopped
